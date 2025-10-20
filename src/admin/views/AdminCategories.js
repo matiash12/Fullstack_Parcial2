@@ -17,7 +17,7 @@ const AdminCategories = () => {
     };
 
     const handleDelete = (id) => {
-        if (window.confirm('¿Estás seguro? Si eliminas la categoría, los productos asociados pueden quedar sin categoría.')) {
+        if (window.confirm('¿Estás seguro? Si eliminas la categoría, los productos asociados quedarán sin categoría.')) {
             deleteCategory(id);
         }
     };
