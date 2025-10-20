@@ -1,15 +1,20 @@
+// src/index.js
+
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom'; // <-- Cambiado: importar ReactDOM directamente
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Asegúrate que Bootstrap CSS esté importado
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// --- Usar la API de renderizado de React 17 ---
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root') // El elemento del DOM donde se monta la app
 );
+// ---------------------------------------------
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

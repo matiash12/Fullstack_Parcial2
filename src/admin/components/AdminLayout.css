@@ -1,0 +1,10 @@
+/* src/admin/components/AdminLayout.css */
+
+.sidebar {
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+
+.main-content {
+    padding: 2rem;
+}
